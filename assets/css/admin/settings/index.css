@@ -1,0 +1,153 @@
+@import url('../../all.css');
+.settings_adm {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu_settings_adm {
+    width: 300px;
+}
+
+.box_menu_settings_adm {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+.isi_settings_adm {
+    flex: 1;
+    margin-left: 25px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: var(--white);
+}
+
+.isi_menu_settings_adm {
+    width: 100%;
+    background-color: var(--white);
+    padding: 10px 15px;
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+    box-sizing: border-box;
+}
+
+.isi_menu_settings_adm_active {
+    width: 100%;
+    background-color: var(--orange);
+    padding: 10px 15px;
+    font-size: 16px;
+    color: var(--white);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+    box-sizing: border-box;
+}
+
+.isi_menu_settings_adm:hover {
+    color: var(--orange);
+}
+
+.box_isi_settings_adm {
+    width: 100%;
+    display: none;
+}
+
+.box_isi_settings_adm h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.box_logo_hs {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box_logo_hs img {
+    height: 80px;
+}
+
+.text_box_logo_hs {
+    margin-left: 25px;
+}
+
+.text_box_logo_hs h1 {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.text_box_logo_hs p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--semi-black);
+    margin-top: 5px;
+}
+
+#ubah_logo_cf_hs {
+    display: none;
+}
+
+#err_foto_hs {
+    color: var(--red);
+    display: none;
+}
+
+.box_form_set_adm1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin-top: 30px;
+}
+
+.box_form_set_adm2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-top: 30px;
+}
+
+.isi_box_form_set_adm1 {
+    width: 100%;
+}
+
+.box_button_set_adm {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.loading_s {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .settings_adm {
+        flex-direction: column;
+    }
+    .menu_settings_adm {
+        width: 100%;
+    }
+    .box_menu_settings_adm {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .isi_settings_adm {
+        flex: 1;
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 30px;
+        box-sizing: border-box;
+        background-color: var(--white);
+    }
+}

@@ -1,0 +1,133 @@
+@import url('../all.css');
+.notification {
+    width: 60%;
+    margin: 30px auto auto;
+}
+
+.head_notification {
+    width: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head_notification h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.head_notification p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+.isi_notification {
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+.box_isi_notification {
+    width: 100%;
+    padding: 20px 30px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.box_isi_notification img {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.text_box_isi_notification {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.text_box_isi_notification h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    margin-top: -5px;
+}
+
+.text_box_isi_notification h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--semi-black);
+    margin-top: 5px;
+}
+
+.text_box_isi_notification p {
+    font-size: 13px;
+    color: var(--grey);
+    margin-top: 7px;
+}
+
+.isi_notification0 {
+    width: 100%;
+    padding: 135px 30px;
+    background-color: var(--white);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.isi_notification0 img {
+    height: 130px;
+}
+
+.isi_notification0 p {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        display: none;
+    }
+    .back_header {
+        display: none;
+    }
+    .notification {
+        width: 100%;
+        margin: 0%;
+    }
+    .head_notification {
+        padding: 15px 20px;
+    }
+    .box_isi_notification {
+        padding: 20px 20px;
+    }
+    .head_notification h1 {
+        font-size: 17px;
+    }
+    .head_notification p {
+        font-size: 15px;
+    }
+    .text_box_isi_notification h3 {
+        font-size: 15px;
+    }
+    .text_box_isi_notification h4 {
+        font-size: 13px;
+    }
+    .text_box_isi_notification p {
+        font-size: 12px;
+    }
+}

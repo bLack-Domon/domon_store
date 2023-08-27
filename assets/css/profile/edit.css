@@ -1,0 +1,137 @@
+@import url('../all.css');
+.edit_profile {
+    width: 450px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: var(--white);
+    margin: 30px auto 0 auto;
+}
+
+.edit_profile h1 {
+    font-size: 20px;
+    color: var(--black);
+}
+
+.box_img_pro {
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.change_img_pro {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: var(--orange);
+    border: 2px solid var(--white);
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.change_img_pro i {
+    font-size: 15px;
+    margin-left: 1px;
+}
+
+.box_img_pro img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.box_input_pro {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.isi_box_input_pro {
+    width: 100%;
+}
+
+.isi_box_input_pro p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--grey);
+    margin-bottom: 5px;
+}
+
+.cfile_img_pro {
+    display: none;
+}
+
+#loading_e_pro {
+    display: none;
+}
+
+.err_foto_pro {
+    color: var(--red);
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    display: none;
+}
+
+.edit_password_berhasil {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit_password_berhasil i {
+    font-size: 70px;
+    color: var(--orange);
+}
+
+.edit_password_berhasil h1 {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.tipe_daftar_biasa {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--orange);
+}
+
+.tipe_daftar_social {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.b_button_ep {
+    height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .edit_profile {
+        width: 100%;
+        margin: 0;
+    }
+    header {
+        display: none;
+    }
+    .back_header {
+        display: none;
+    }
+    body {
+        background-color: var(--white);
+    }
+}

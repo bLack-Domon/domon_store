@@ -1,0 +1,906 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+:root {
+    /* ganti kode warna dibawah ini sesuai keinginan */
+    --black: #111111;
+    --semi-black: #505050;
+    --bg-transparent-black: rgba(0, 0, 0, 0.5);
+    --white: #ffffff;
+    --orange: #DC143C; /* MERAH */
+    --deep-orange: #BB1133; /* DEEP MERAH */
+    --semi-orange: #F05C79; /* DEMI MERAH */
+    --grey: #959595;
+    --border-grey: #e2e2e2;
+    --semi-grey: #f5f5f5;
+    --red: #CC3333; /* MERAH DUA */
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--semi-grey);
+}
+
+.width {
+    width: 85%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--orange);
+    position: fixed;
+    -webkit-box-shadow: 0px 2px 2px 0px var(--deep-orange);
+    -moz-box-shadow: 0px 2px 2px 0px var(--deep-orange);
+    box-shadow: 0px 2px 2px 0px var(--deep-orange);
+    z-index: 2;
+}
+
+.back_header {
+    width: 100%;
+    height: 70px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box_search_header {
+    flex: 1;
+    position: relative;
+    margin: 0 40px;
+}
+
+.search_header {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: var(--white);
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 1px 5px 1px var(--deep-orange);
+    -moz-box-shadow: 1px 1px 5px 1px var(--deep-orange);
+    box-shadow: 1px 1px 5px 1px var(--deep-orange);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.svg_logo_header {
+    height: 50px;
+}
+
+.logo_header p {
+    color: var(--white);
+    margin-left: 15px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.search_header input {
+    font-family: 'Poppins', sans-serif;
+    flex: 1;
+    height: 40px;
+    padding: 0 15px;
+    border: 0;
+    font-size: 13px;
+    outline: none;
+}
+
+.search_header button {
+    width: 80px;
+    height: 40px;
+    background-color: var(--orange);
+    margin-left: 15px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.search_header button i {
+    color: var(--white);
+    font-size: 18px;
+}
+
+.profile_menu_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile_menu_header a {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.profile_menu_header p {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.box_icon_menu_header {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_icon_menu_header p {
+    padding: 1px 6.5px;
+    background-color: var(--white);
+    position: absolute;
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 11px;
+    left: 5px;
+    top: -5px;
+    border-radius: 15px;
+    border: 2px solid var(--orange);
+}
+
+.profile_menu_header i {
+    font-size: 30px;
+    color: var(--white);
+}
+
+.profile_menu_header h5 {
+    font-size: 29px;
+    color: var(--white);
+    margin-top: -2px;
+    font-weight: normal;
+}
+
+.box_img_menu_header {
+    width: 30px;
+    height: 30px;
+}
+
+.box_img_menu_header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.res_search_header {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--white);
+    position: absolute;
+    margin-top: 10px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 4px 0px var(--border-grey);
+    -moz-box-shadow: 0px 0px 4px 0px var(--border-grey);
+    box-shadow: 0px 0px 4px 0px var(--border-grey);
+    display: none;
+    padding: 6px 0;
+}
+
+.loading_res_search_header {
+    height: 30px;
+    margin: 40px 0;
+    display: none;
+}
+
+#isi_res_search_header {
+    display: none;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    padding: 45px 0px 38px 0px;
+    background-color: var(--white);
+    margin-top: 30px;
+}
+
+.footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 45px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--semi-grey);
+}
+
+.footer_grid {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer_grid h1 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--semi-black);
+    margin-bottom: 20px;
+}
+
+.footer_grid a {
+    font-size: 13.5px;
+    font-weight: 400;
+    color: var(--semi-black);
+}
+
+.footer_grid p {
+    margin: 7px 0px;
+}
+
+.footer_grid i {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.footer_grid img {
+    width: 55px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.footer_sosmed {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 13px;
+}
+
+.isi_footer_sosmed {
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    font-display: row;
+    align-items: center;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    color: var(--grey);
+}
+
+/* LIST PRODUK */
+
+.list_produk {
+    width: 100%;
+    background-color: var(--white);
+    position: relative;
+}
+
+.text_list_produk {
+    width: 100%;
+    padding: 13px 15px 15px 15px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.list_produk img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    float: left;
+}
+
+.box_judul_list_produk {
+    width: 100%;
+    height: 43px;
+}
+
+.box_judul_list_produk p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--black);
+    font-size: 14px;
+}
+
+.box_harga_list_produk {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.box_harga_list_produk h1 {
+    font-size: 15px;
+    color: var(--orange);
+    font-weight: 500;
+}
+
+.box_harga_list_produk span {
+    font-size: 13px;
+}
+
+.box_harga_list_produk p {
+    font-size: 11.5px;
+    color: var(--black);
+}
+
+/* BOTTOM NAVIGATION */
+
+.back_bot_nav {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    display: none;
+}
+
+.bot_nav_cover {
+    display: none;
+}
+
+.bot_nav {
+    width: 100%;
+    padding: 8px 0;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    box-sizing: border-box;
+    background-color: var(--white);
+    -webkit-box-shadow: 0px -1px 2px 0px var(--border-grey);
+    -moz-box-shadow: 0px -1px 2px 0px var(--border-grey);
+    box-shadow: 0px -1px 2px 0px var(--border-grey);
+}
+
+.isi_bot_nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.isi_bot_nav i {
+    font-size: 22px;
+    color: var(--grey);
+}
+
+.isi_bot_nav p {
+    font-size: 10px;
+    margin-top: 3px;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.isi_bot_nav h4 {
+    font-size: 22px;
+    color: var(--orange);
+}
+
+.isi_bot_nav h5 {
+    font-size: 10px;
+    margin-top: 3px;
+    font-weight: 500;
+    color: var(--orange);
+}
+
+.isi_bot_nav h3 {
+    position: absolute;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 9px;
+    font-weight: 600;
+    padding: 1px 5px;
+    border-radius: 10px;
+    margin-top: -5px;
+    margin-left: 25px;
+    border: 2px solid var(--white);
+}
+
+/* BELUM LOGIN */
+
+.belum_login {
+    width: 100%;
+    background-color: var(--white);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 140px 30px;
+    box-sizing: border-box;
+}
+
+.belum_login img {
+    height: 110px;
+}
+
+.belum_login h1 {
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 500;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.login_belum_login {
+    width: 200px;
+    height: 48px;
+    background-color: var(--orange);
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.login_belum_login p {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+/* ADMIN */
+
+.admin {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.header_responsive_admin {
+    width: 100%;
+    height: 55px;
+    background-color: var(--white);
+    position: fixed;
+    display: none;
+    border-bottom: 1px solid var(--semi-grey);
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.header_responsive_admin i {
+    font-size: 20px;
+    color: var(--black);
+}
+
+.header_responsive_admin p {
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.menu_admin {
+    width: 310px;
+    height: 100%;
+    background-color: var(--white);
+    box-sizing: border-box;
+    padding: 50px 40px;
+    overflow: auto;
+}
+
+.content_admin {
+    flex: 1;
+    height: 100%;
+    background-color: var(--semi-grey);
+    box-sizing: border-box;
+    padding: 50px;
+    overflow: auto;
+}
+
+.menu_profile_admin {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu_profile_admin img {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 45px;
+}
+
+.menu_profile_admin p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--orange);
+    margin-left: 20px;
+}
+
+.menu_list {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}
+
+.menu_list_isi {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu_list_isi_active {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box_icon_menu_list_isi {
+    width: 19px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3px;
+}
+
+.menu_list_isi i {
+    font-size: 19px;
+    color: var(--grey);
+    opacity: 0.55;
+}
+
+.menu_list_isi p {
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.menu_list_isi_active i {
+    font-size: 19px;
+    color: var(--orange);
+}
+
+.menu_list_isi_active p {
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--orange);
+}
+
+.line_menu_list {
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-grey);
+    /* margin-top: 30px; */
+}
+
+.title_content_admin {
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.isi_content_admin {
+    width: 100%;
+    margin-top: 35px;
+}
+
+/* COMPONENT */
+
+.p_input {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--grey);
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--border-grey);
+    padding: 10px 13px;
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--black);
+    outline: none;
+    resize: none;
+}
+
+.select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--border-grey);
+    padding: 10px 13px;
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--black);
+    outline: none;
+}
+
+.textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--border-grey);
+    padding: 13px;
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--black);
+    outline: none;
+    resize: none;
+}
+
+.button {
+    width: 100%;
+    height: 48px;
+    background-color: var(--orange);
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button p {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.button img {
+    width: 27px;
+    height: 27px;
+}
+
+/* POPUP CONFIRM */
+
+.back_popup_confirm {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-transparent-black);
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.popup_confirm {
+    width: 320px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: var(--white);
+    border-radius: 3px;
+}
+
+.head_popup_confirm {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.head_popup_confirm i {
+    font-size: 30px;
+    color: var(--orange);
+}
+
+.head_popup_confirm p {
+    font-size: 15px;
+    color: var(--black);
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+.popup_confirm h5 {
+    font-size: 14px;
+    color: var(--semi-black);
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.box_button_popup_confirm {
+    width: 100%;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.button_cancel_popup_confirm {
+    width: 100%;
+    height: 38px;
+    border-radius: 3px;
+    background-color: var(--border-grey);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button_cancel_popup_confirm p {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.button_confirm_popup_confirm {
+    width: 100%;
+    height: 38px;
+    border-radius: 3px;
+    background-color: var(--orange);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button_confirm_popup_confirm p {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.button_confirm_popup_confirm img {
+    height: 20px;
+    display: none;
+}
+
+#res {
+    display: none;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 900px) {
+    .logo_header {
+        display: none;
+    }
+    .box_search_header {
+        margin: 0px 30px 0px 0px;
+    }
+    .box_menu_admin {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bg-transparent-black);
+        position: fixed;
+        display: none;
+    }
+    .menu_admin {
+        width: 280px;
+        padding: 30px;
+    }
+    .content_admin {
+        padding: 20px;
+        margin-top: 55px;
+    }
+    .header_responsive_admin {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .width {
+        width: 100%;
+    }
+    header {
+        padding: 10px 0;
+    }
+    .back_header {
+        height: 63px;
+    }
+    .menu_header {
+        display: none;
+    }
+    .search_header {
+        margin: 0 15px;
+    }
+    .res_search_header {
+        margin: 5px 15px;
+    }
+    .search_header input {
+        height: 32px;
+        font-size: 11.5px;
+        padding: 0 12px;
+    }
+    .search_header button {
+        width: 55px;
+        height: 32px;
+    }
+    .search_header button i {
+        font-size: 16px;
+    }
+    footer {
+        display: none;
+    }
+    .list_produk {
+        border: 2px solid var(--semi-grey);
+        box-sizing: border-box;
+    }
+    .list_produk img {
+        height: 120px;
+    }
+    .text_list_produk {
+        padding: 7px 10px 10px 10px;
+    }
+    .box_judul_list_produk {
+        height: 37px;
+    }
+    .box_judul_list_produk p {
+        font-size: 12px;
+    }
+    .box_harga_list_produk h1 {
+        font-size: 12.5px;
+        font-weight: 600;
+    }
+    .box_harga_list_produk span {
+        font-size: 11px;
+    }
+    .box_harga_list_produk p {
+        font-size: 9px;
+        font-weight: 500;
+    }
+    .back_bot_nav {
+        display: block;
+    }
+    .bot_nav_cover {
+        display: block;
+    }
+    .belum_login {
+        margin-top: 0;
+    }
+    .belum_login img {
+        height: 90px;
+    }
+    .belum_login h1 {
+        font-size: 16px;
+    }
+    .login_belum_login {
+        width: 180px;
+        height: 43px;
+    }
+    .login_belum_login p {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--white);
+    }
+}

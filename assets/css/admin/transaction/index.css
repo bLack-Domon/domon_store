@@ -1,0 +1,190 @@
+@import url('../../all.css');
+.back_vd_iv {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-transparent-black);
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+
+.vd_iv {
+    width: 500px;
+    padding: 30px;
+    background-color: var(--white);
+    margin: 50px auto;
+    border-radius: 3px;
+    position: relative;
+}
+
+.close_vd_iv {
+    position: absolute;
+    font-size: 22px;
+    color: var(--red);
+    right: 3px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.produk_vd_iv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.produk_vd_iv img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.rincian_produk_vd_iv {
+    flex: 1;
+    margin-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rincian_produk_vd_iv h1 {
+    font-size: 15px;
+    color: var(--black);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.rincian_produk_vd_iv p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--grey);
+    margin-top: 3px;
+}
+
+.rincian_produk_vd_iv p span {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--orange);
+    margin-top: 3px;
+}
+
+.rincian_vd_iv {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    background-color: var(--border-grey);
+}
+
+.isi_rincian_vd_iv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 10px 0;
+}
+
+.isi_rincian_vd_iv h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.isi_rincian_vd_iv h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black);
+    max-width: 50%;
+    text-align: right;
+}
+
+.box_button_vd_id {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.back_up_ri {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-transparent-black);
+    position: fixed;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.up_ri{
+    width: 400px;
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: 3px;
+}
+
+.up_ri h1{
+    font-weight: 600;
+    color: var(--black);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.up_ri input{
+    margin-bottom: 30px;
+}
+
+.list_transaksi_admin {
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+}
+
+.isi_list_transaksi_admin {
+    flex: 1;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 500;
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+}
+
+.isi_list_transaksi_admin_active {
+    flex: 1;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--orange);
+    font-weight: 500;
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--orange);
+}
+
+.box_res_transaksi_admin {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.loading_res_transaksi_admin {
+    width: 100%;
+    background-color: var(--white);
+    padding: 190px 0;
+    display: none;
+}
+
+.loading_res_transaksi_admin img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 0;
+}
+
+.res_transaksi_admin {
+    display: none;
+}

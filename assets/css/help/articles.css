@@ -1,0 +1,63 @@
+@import url('../all.css');
+.articles {
+    width: 100%;
+    padding: 40px;
+    background-color: var(--white);
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.t_articles {
+    font-size: 23px;
+}
+
+.p_articles {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.box_sosmed_hk {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.isi_box_sosmed_hk {
+    width: 100%;
+    border: 2px solid var(--border-grey);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--semi-black);
+    padding: 15px 20px;
+    transition: 0.2s;
+}
+
+.isi_box_sosmed_hk:hover {
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+    color: var(--white);
+}
+
+.isi_box_sosmed_hk i {
+    font-size: 23px;
+}
+
+.isi_box_sosmed_hk p {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .articles {
+        padding: 25px;
+    }
+    .box_sosmed_hk {
+        grid-template-columns: 1fr 1fr;
+    }
+}

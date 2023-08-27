@@ -1,0 +1,135 @@
+@import url('../../all.css');
+.banner_promo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.isi_banner_promo {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.img_banner_promo {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    float: left;
+}
+
+.menu_isi_banner_promo {
+    width: 100%;
+    padding: 0 15px;
+    height: 50px;
+    box-sizing: border-box;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box_status_banner_promo {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box_status_banner_promo i {
+    font-size: 20px;
+    color: var(--orange);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.box_status_banner_promo p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--orange);
+    margin-top: 1px;
+}
+
+.box_status_banner_promo_nonactive {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box_status_banner_promo_nonactive i {
+    font-size: 20px;
+    color: var(--border-grey);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.box_status_banner_promo_nonactive p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--semi-black);
+    margin-top: 1px;
+}
+
+.icon_mib {
+    font-size: 23px;
+    cursor: pointer;
+    margin-left: 20px;
+    color: var(--semi-black);
+    transition: 0.2s;
+}
+
+.icon_mib:hover {
+    color: var(--orange);
+}
+
+.add_banner_promo {
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--semi-black);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add_banner_promo:hover {
+    color: var(--orange);
+}
+
+.add_banner_promo i {
+    font-size: 35px;
+}
+
+.add_banner_promo p {
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+#pilih_banner {
+    display: none;
+}
+
+#edit_banner_click{
+    display: none;
+}
+
+#loading_add_banner_promo {
+    display: none;
+}
+
+.loading_add_banner_promo {
+    height: 40px;
+}
+
+.p_loading_add_banner_promo {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 500;
+}

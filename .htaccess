@@ -1,0 +1,13 @@
+RewriteEngine on
+
+RewriteRule ^product/view/([0-9a-zA-Z._]+) product/view.php?idproduct=$1
+RewriteRule ^category/list/([0-9a-zA-Z._]+) category/list.php?idkategori=$1
+RewriteRule ^checkout/detail/([0-9a-zA-Z._]+) checkout/detail.php?idinvoice=$1
+RewriteRule ^admin/transaction/print/invoice/([0-9]+) admin/transaction/print/invoice.php?idinvoiceprint=$1
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)index\.php($|\ |\?)
+RewriteRule ^ /%1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+Options -Indexes

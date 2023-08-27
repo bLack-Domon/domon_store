@@ -1,0 +1,59 @@
+@import url('../all.css');
+/* TITLE */
+
+.title_kategori {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    background-color: var(--white);
+}
+
+.title_kategori p {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.title_kategori span {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--orange);
+}
+
+.grid_produk {
+    width: 100%;
+    margin-top: 15px;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+    .title_kategori {
+        margin-top: 15px;
+        padding: 0 15px;
+        height: 53px;
+    }
+    .title_kategori p {
+        font-size: 15px;
+    }
+    .title_kategori span {
+        font-size: 15px;
+    }
+    .grid_produk{
+        background-color: var(--white);
+        margin-top: 0;
+        padding: 0px 15px 15px 15px;
+        grid-gap: 10px;
+        box-sizing: border-box;
+        grid-template-columns: 1fr 1fr;
+    }
+}
